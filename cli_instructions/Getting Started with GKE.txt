@@ -1,0 +1,9 @@
+gcloud config set project <PROJECT_ID>
+export MY_ZONE=<REGION>
+gcloud container clusters create <NAME_OF_CLUSTER> --zone $MY_ZONE --num-nodes <NUM_OF_NODES>
+kubectl get pods - VERSION
+kubectl expose deployment nginx --port 80 --type LoadBalancer
+kubectl get services
+kubectl scale deployment nginx --replicas <NUM_OF_PODS>
+kubectl get pods
+kubectl get services 
